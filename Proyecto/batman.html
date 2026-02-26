@@ -4,44 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman | El Caballero de la Noche </title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap');
-        
-        :root {
-            --negro-gotham: #0a0b0d;
-            --gris-armadura: #1c1e22;
-            --amarillo-bat: #f0bb0e;
-            --texto-gris: #b0b3b8;
-            --borde-acero: #33363b;
-        }
-        body {
-            background-color: var(--negro-gotham);
-            background-image: 
-                radial-gradient(circle at 50% 20%, #1a1a2e 0%, transparent 50%),
-                linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-                url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura sutil de fibra de carbono */
-            color: var(--texto-gris);
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            max-width: 850px;
-            padding: 40px;
-            background: rgba(28, 30, 34, 0.7);
-            border-left: 1px solid var(--borde-acero);
-            border-right: 1px solid var(--borde-acero);
-            box-shadow: 0 0 90px rgba(0,0,0,0.9);
-            backdrop-filter: blur(5px);
-        }
-    </style>
 </head>
 <body>
     <h1>Batman</h1>
+    <form action="resultado.html" method="get">
+        <div class="search-container">
+        <label for="busqueda">Buscar:</label> 
+        <input type="search" id="busqueda" name="buscar" placeholder="Escribe tu busqueda" required>
+        <button type="submit"></button>
+        <datalist>
+            
+        </datalist>
+        </div>
+    </form>
         <h2>Bruce wayne</h2>
         
             <p>Batman, uno de los personajes de ficción más emblemáticos del mundo, ha dedicado
@@ -138,6 +113,8 @@
                     </li>
                 </ul>
             </p>
+<h2>Ficha tecnica</h2>
+<table 
 
 
 
