@@ -4,21 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman | El Caballero de la Noche </title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Batman</h1>
-    <form action="resultado.html" method="get">
-        <div class="search-container">
-        <label for="busqueda">Buscar:</label> 
-        <input type="search" id="busqueda" name="buscar" placeholder="Escribe tu busqueda" required>
-        <button type="submit"></button>
-        <datalist>
-            
-        </datalist>
-        </div>
-    </form>
-        <h2>Bruce wayne</h2>
+        <form id="Buscador">
+            <label for="buscador">Buscar:</label> 
+            <input list="secciones" id="buscador" name="buscador" placeholder="Escribe tu busqueda">
+            <datalist id="secciones">
+                <option value="Inicio">
+                <option value="Origen">
+                <option value="Caracteristicas">
+                <option value="Historia">
+                <option value="Impacto cultural">
+                <option value="Ficha tecnica">
+                <option value="Galeria">
+            </datalist>
+            <button type="submit">Ir</button>
+        </form>
+
+    <script>
+document.getElementById("Buscador").addEventListener("submit", function(e) {
+    e.preventDefault();
+    let valor = document.getElementById("buscador").value;
+    let seccion = document.getElementById(valor);
+    
+    if (seccion) {
+        seccion.scrollIntoView({ behavior: "smooth" });
+    } else {
+        alert("Sección no encontrada");
+    }
+});
+</script>
+
         
+        <h1><strong>Batman</strong></h1>
+    <img src="../img/cara.jpeg" alt="cara de batman" class="imagen">
+    <div id="Inicio" class="contenido"></div>
+        <h2>Bruce wayne</h2>
             <p>Batman, uno de los personajes de ficción más emblemáticos del mundo, ha dedicado
                 su vida a una cruzada sin fin: una guerra contra todos los criminales en nombre 
                 de sus padres asesinados, quienes le fueron arrebatados cuando era apenas un niño. 
@@ -34,8 +56,9 @@
                 De noche, sin embargo, se despoja de toda pretensión, se pone su icónica capa y
                 su capucha puntiaguda y se adentra en las sombrías calles, cielos y tejados de Ciudad Gótica.
             </p>
-        
-        <h2>Origen de batman</h2>
+        </div>
+        <div id="Origen" class="contenido">
+        <h2>Origen de batman:</h2>
 
             <p>El joven Bruce Wayne fue un niño privilegiado, criado bajo la atenta mirada de sus padres, 
                 Thomas y Martha, en la alta sociedad de Ciudad Gótica. Alejado del lento descenso de la ciudad 
@@ -57,8 +80,8 @@
                 un reflector utilizado por su aliado, el Comisionado Jim Gordon del Departamento de Policía de Gotham, 
                 Batman vela por sus dominios como un protector vigilante y un fiel Caballero Oscuro.
             </p>
-
-            <h2>Caracteristicas</h2>
+        <div id="Caracteristicas" class="contenido">
+            <h2>Caracteristicas:</h2>
             <ul>
                 <li>Batman no posee habilidades metahumanas. Depende de una disciplina física y mental que lo lleva al límite humano 
                     en fuerza, velocidad, agilidad y resistencia, superando a atletas olímpicos.
@@ -78,8 +101,9 @@
                     a menudo usando su apariencia de murciélago para aterrorizar.
                 </li>
             </ul>
-
-        <h2>Historia</h2>
+        </div>
+        <div id="Historia" class="contenido">
+        <h2>Historia:</h2>
 
             <p>Es un superhéroe ficticio de cómic creado por los estadounidenses Bob Kane y Bill Finger y propiedad de DC Comics. 
                 Apareció por primera vez en la historia titulada «El caso del sindicato químico» de la revista Detective Comics N.º 27,
@@ -89,8 +113,10 @@
                 tecnológicas para crear armas y herramientas con las cuales lleva a cabo sus actividades. Se trata del personaje más 
                 emblemático de DC Comics, junto con Superman.
             </p>
-
-        <h2>Impacto Cultural</h2>
+            <img src="../img/descarga.jpeg">
+        </div>
+        <div id="Impacto cultural" class="contenido">
+        <h2>Impacto Cultural:</h2>
 
             <p>Batman se ha convertido en un icono de la cultura popular, siendo reconocido en todo el mundo. La presencia del 
                 personaje se ha extendido más allá de sus orígenes en los cómics. sucesos como la «Batmanía» producto de la 
@@ -113,8 +139,31 @@
                     </li>
                 </ul>
             </p>
+        </div>
+        <div id="Ficha tecnica" class="contenido">
 <h2>Ficha tecnica</h2>
-<table 
+        <img src="../img/BATMAN.jpeg" alt="batman" class="imagen">
+    <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Bruce Wayne</th>
+            <tr>
+                <th>Edad</th>
+                <th>40-45 años</th>
+            </tr>
+                <th>Estatura</th>
+                <th>1,88m-1,95m</th>
+            </tr>
+                <th>peso</th>
+                <th>95kg</th>
+            <tr>
+                <th>Primera aparicion</th>
+                <th>30 Marzo 1939</th>
+            </tr>
+    </table>
+    <div id="Galeria" class="contenido">
+    <h2>Galeria:</h2>
+    </div>
 
 
 

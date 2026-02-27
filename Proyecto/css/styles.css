@@ -1,0 +1,41 @@
+
+.contenido {
+    width: 80%;
+    margin-left: 0 auto; 
+    line-height: 1.6;
+}
+.imagen {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    
+    }
+
+
+
+
+@media (max-width: 768px) {
+    .contenido {
+        width: 90%;
+    }
+}
+body {
+    color: blanchedalmond;
+    font-size: large;
+    background-color: rgb(78, 76, 76);
+    background-image: url(../../img/Gotham\ City.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    
+    body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2); 
+    z-index: -1;
+}
