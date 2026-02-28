@@ -64,3 +64,32 @@ body {
     background: rgba(0, 0, 0, 0.2); 
     z-index: -1;
 }
+#Registro form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#Registro label {
+    margin-bottom: 5px;
+}
+
+#Registro input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#Registro button {
+    padding: 10px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Registro button:hover {
+    background-color: #444;
+}
