@@ -1,25 +1,49 @@
 
 .contenido {
-    width: 80%;
-    margin-left: 0 auto; 
-    line-height: 1.6;
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+    text-align: left; 
 }
+
+
+
 .imagen {
     width: 90%;
     max-width: 400px;
     height: auto;
     display: block;
-    margin-bottom: 20px;
-    
-    }
-.galeria-seccion {
-    margin-top: 60px;
+    margin: 20px auto;
 }
+
+
+
+.galeria-seccion {
+    margin: 80px auto;
+    padding: 30px;
+    max-width: 900px;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+
 
 .galeria-seccion h2 {
     color: white;
     margin-bottom: 20px;
+    text-align: center;
 }
+
+
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+
 
 .galeria {
     display: grid;
@@ -45,29 +69,42 @@
     .contenido {
         width: 90%;
     }
+
+    .galeria img {
+        height: 200px;
+    }
 }
+
+
 body {
     color: blanchedalmond;
-    font-size: large;
+    font-size: 18px;
+
     background-color: rgb(78, 76, 76);
-    background-image: url(../../img/Gotham\ City.jpeg);
+    background-image: url('../../img/Gotham City.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-     
-    body::before {
+
+
+body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.2); 
+    background: rgba(0, 0, 0, 0.65);
     z-index: -1;
 }
+
+
+
 #Registro form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
 }
 
 #Registro label {
@@ -75,21 +112,22 @@ body {
 }
 
 #Registro input {
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
 }
 
 #Registro button {
     padding: 10px;
     border: none;
-    background-color: #222;
+    background-color: #7e724b;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 #Registro button:hover {
-    background-color: #444;
+    background-color: #4b3d0c;
 }
